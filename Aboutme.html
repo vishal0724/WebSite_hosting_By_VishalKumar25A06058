@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Portfolio</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .container{
+                padding: 10px 8% 10px 8%;
+                margin: 35px 40px 0px 40px;
+                display: flex;
+                border-radius: 10px;
+                box-shadow: 1px 1px 80px rgba(255, 166, 0, 0.183)
+            }
+            .text_part{
+                border-radius: 10px;
+                padding-top: 100px;
+                width: 60%;
+            }
+            .text_part p{
+                color: rgb(52, 50, 50);
+            }
+            span, .welcome{
+                color: orange;
+                font-size: larger;
+            }
+            .image{
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .image img{
+                width: 270px;      /* Set equal width and height */
+                height: 290px;     /* Set equal width and height */
+                border-radius: 50%; /* Makes the element circular */
+                border: 2px solid orange;
+                object-fit: cover;
+            }
+            a{
+                text-decoration: none;
+                color: orange;
+            }
+            button{
+                background-color: white;
+                color: orange;
+                padding: 7px 20px;
+                border: orange 1.5px solid;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .bacbtn{
+                height: 45px;
+                justify-content: center;
+                align-items: center;
+            }
+            .bacbtn img{
+                height: 40px;
+                width: 40px;
+                margin: 0 0 0 20px;
+            }
+            .bacbtn img:hover{
+                width: 42px;
+                height: 42px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="bacbtn">
+            <a href="./index.html">
+                <img src='./Back_button.png' alt="Back">
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="text_part">
+                <h3 class="welcome">Welcome to my Portfolio --------</h3>
+                <h1 class="name">Hey, I'm <span>VISHAL KUMAR</span>.<br>
+                    I'm a web developer.</h1>
+
+                <p>I am a student of <span>DTU</span>, currently pursuing my <span>B.Tech
+                    in Computer Science and Engineering</span>. I love to create beautiful 
+                    and functional websites using modern web technologies. My passion for 
+                    web development drives me to constantly learn and improve my skills.</p>
+
+                <address>
+                    Email: <a href="mailto:vishalkumar240107@gmail.com">
+                        vishalkumar240107@gmail.com</a><br>
+                    Contact No: <a href="tel:+910000007940">+91 0000007940</a>
+                </address><br>
+
+                <button>Let's Connect</button>
+                
+            </div>
+            <div class="image">
+                <img src="./mypic.jpg" height="400px" alt="my pic">
+            </div>
+        </div>
+    </body>
+</html>

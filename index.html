@@ -1,83 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>Portfolio</title>
+    <head>
+        <title>Web Hosting ClassW</title>
         <meta charset="UTF-8">
         <style>
             *{
                 font-family:Georgia, 'Times New Roman', Times, serif;
             }
-            .container{
-                padding: 10px 8% 10px 8%;
-                margin: 80px 40px 0px 40px;
-                display: flex;
-                border-radius: 10px;
-                box-shadow: 1px 1px 80px rgba(255, 166, 0, 0.183)
-            }
-            .text_part{
-                border-radius: 10px;
-                padding-top: 100px;
-                width: 60%;
-            }
-            .text_part p{
-                color: rgb(52, 50, 50);
-            }
-            span, .welcome{
+            h1{
+                text-align: center;
                 color: orange;
-                font-size: larger;
+                margin: 50px 0 40px 0;
             }
-            .image{
-                width: 40%;
-                display: flex;
-                justify-content: center;
+            .card_container{
+                /*border: 2px solid black;*/
+                width: 80%;
+                justify-self: center;
+                text-align: center;
+            }
+            .card_container div{
+                width: 300px;
+                height: 250px;
+                margin: 40px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 10px;
+                background-color: rgb(255, 128, 0);
+                box-shadow: 10px 10px 30px rgb(90, 58, 1);
+            }
+            .card_container div h2{
+                margin-top: 40%;
                 align-items: center;
-            }
-            img{
-                width: 270px;      /* Set equal width and height */
-                height: 290px;     /* Set equal width and height */
-                border-radius: 50%; /* Makes the element circular */
-                border: 2px solid orange;
-                object-fit: cover;
             }
             a{
                 text-decoration: none;
-                color: orange;
+                color: white;
             }
-            button{
-                background-color: white;
-                color: orange;
-                padding: 7px 20px;
-                border: orange 1.5px solid;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-
         </style>
     </head>
-
     <body>
-        <div class="container">
-            <div class="text_part">
-                <h3 class="welcome">Welcome to my Portfolio --------</h3>
-                <h1 class="name">Hey, I'm <span>VISHAL KUMAR</span>.<br>
-                    I'm a web developer.</h1>
-
-                <p>I am a student of <span>DTU</span>, currently pursuing my <span>B.Tech
-                    in Computer Science and Engineering</span>. I love to create beautiful 
-                    and functional websites using modern web technologies. My passion for 
-                    web development drives me to constantly learn and improve my skills.</p>
-
-                <address>
-                    Email: <a href="mailto:vishalkumar240107@gmail.com">
-                        vishalkumar240107@gmail.com</a><br>
-                    Contact No: <a href="tel:+910000007940">+91 0000007940</a>
-                </address><br>
-
-                <button>Let's Connect</button>
-                
+        <h1>Welcome to my Website</h1>
+        <div class="card_container">
+            <div class="Aboutme">
+                <h2><a href="./Aboutme.html">About Me</a></h2>
             </div>
-            <div class="image">
-                <img src="./mypic.jpg" height="400px" alt="my pic">
+            <div class="Projects">
+                <h2><a href="./Project.html">Projects</a></h2>
             </div>
         </div>
     </body>
