@@ -13,7 +13,7 @@
             header div{
                 position: relative;
                 top: 0px;
-                left: 10px;
+                left: 0px;
                 height: 45px;
             }
             header div img{
@@ -37,9 +37,21 @@
             section{
                 color: rgb(90, 90, 90);
             }
+            .indentation{
+                margin-left: 20px;
+            }
+            button{
+                background-color: rgb(255, 166, 0);
+                color: white;
+                padding: 7px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
             footer{
-                position: fixed;
-                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.769);
                 width: 100%;
                 text-align: center;
                 font-size: small;
@@ -53,29 +65,87 @@
     <body>
         <header>
             <div>
-                <a href="./index.html"><img src="./Back_button.png" alt="Back"></a>
+                <a href="./index.html"><img src="./pic/Back_button.png" alt="Back"></a>
             </div>
             <h1>Web Page 06</h1>
         </header>
         <br>
         <main>
-            <h2>Project1</h2>
+            <h2>Word Association Game</h2>
             <section>
-                This is my first project. In this project, I have created
-                a simple webpage using HTML and CSS.
+                The Word Association Game is a simple activity where one person 
+                says a word and the other responds with the first related word 
+                that comes to mind. It helps improve quick thinking, vocabulary, 
+                creativity, and communication skills. The game is commonly used 
+                for fun, brainstorming, team-building, and even in interviews 
+                to observe a person's thought process.
             </section>
+            <br>
+            <a href="https://github.com/vishal0724/Word-Association-Game"><button>Source Code</button></a>
             <hr>
-            <h2>Project1</h2>
+
+            <h2>Python-based Library Management</h2>
             <section>
-                This is my first project. In this project, I have created 
-                a simple webpage using HTML and CSS.
+                This Python-based Library Management System is designed to manage books, authors, and members using a JSON 
+                file for data storage. It follows an object-oriented approach with classes for Library, Book, Author, and 
+                Member. The system supports adding, removing, issuing books, and viewing borrowed books, making it a simple 
+                but functional console-based application.
+                The program starts by importing the required modules: os for file handling and json for reading and writing 
+                data. Data is stored in a file named lib_data.json, and two helper functions, load_data() and save_data(), 
+                manage reading and writing JSON data. If the file does not exist or is empty, an empty dictionary is returned.
+                The Library class acts as the central component. During initialization, it loads existing books, authors, 
+                and members from the JSON file. Each entry is converted into its corresponding object form (Book, Author, 
+                Member). This ensures that the program starts with the most recent saved data.
+                The system includes several important operations:<br><br>
+                <div class="indentation">
+                    1. Add Book
+                            A book is added by creating a Book object and appending it to the library’s book list. The book details 
+                            are also added to the JSON file to ensure permanent storage.<br><br>
+                    2. Remove Book
+                            Books are removed from both the in-memory list and the JSON file. The function searches for the book by 
+                            name and updates the stored data.<br><br>
+                    3. Add Author
+                            Authors are added by creating an Author object and storing their name in the JSON file.<br><br>
+                    4. Remove Author
+                            Similar to removing books, this function deletes an author from both internal memory and JSON.<br><br>
+                    5. Add Member
+                            A new member is registered in the system with an empty borrowed-books list. Their data is saved to JSON 
+                            to maintain persistence across program runs.<br><br>
+                    6. Remove Member
+                            Members are removed using their name, and their record is deleted from the JSON file.<br><br>
+                    7. Search Book
+                            The system checks if a book exists in the current library list and, if found, displays its details such 
+                            as name, author, and publication year.<br><br>
+                    8. Book List
+                            Displays all books available in the library with basic information like title, author, 
+                            and publication year.<br><br>
+                    9. Issue Book
+                            This is one of the most important features. When a book is issued, the program checks whether the book 
+                            and member exist. It also ensures the member does not already have the same book issued. If valid, the 
+                            book is added to the member’s borrowed_books list in both in-memory objects and JSON storage.<br><br>
+                    10. View Borrowed Books
+                            Users can view all books currently borrowed by a specific member. The system displays each book’s name, 
+                            author, and publication year.<br><br>
+                </div>
+                The main() function acts as the user interface. It displays a menu and takes user input for different actions. 
+                Based on the chosen option, it calls the corresponding Library class method.
+                In summary, this Library Management System demonstrates file handling, JSON storage, object-oriented programming, 
+                and basic data management operations. It provides a simple but effective model for managing library records persistently.
             </section>
+            <a href="https://github.com/vishal0724/Library_Managment"><button>Source Code</button></a>
             <hr>
-            <h2>Project1</h2>
+
+
+            <h2>HangMan Game Via Python</h2>
             <section>
-                This is my first project. In this project, I have created a 
-                simple webpage using HTML and CSS.
+                Hangman is a classic word-guessing game where one player thinks of a word and the other 
+                tries to guess it by suggesting letters. The word is shown as blanks, and for every wrong 
+                guess, a part of a stick-figure hangman is drawn. The goal is to guess the complete word 
+                before the drawing is finished. It tests vocabulary, logic, and guessing skills. In digital 
+                versions, players get a fixed number of lives, see letters already guessed, and receive 
+                hints. The game ends when the player either completes the word or runs out of chances.
             </section>
+            <a href="https://github.com/vishal0724/HangMan-Game-Via-Python--"><button>Source Code</button></a>
             <hr>
         </main>
         <footer>
